@@ -1,6 +1,6 @@
 QA Manual Portfolio
 Sauce Demo Shopify – Manual Testing Project
-📌 Project Overview
+Project Overview
 
 This repository contains a manual QA testing portfolio project created for the demo e-commerce website:
 
@@ -109,13 +109,13 @@ Status
 ✔ Bug Reports – Completed
 ✔ Test Summary – Completed
 
-🚀 Next Steps (Optional)
+Next Steps (Optional)
 
 Automation mapping (manual → automation candidates)
 Selenium test automation (Java)
 CI integration (future improvement)
 
-📌 Notes
+Notes
 
 This is a demo testing project created for learning and portfolio purposes.
 The website under test is a demo Shopify store and does not represent a production environment.
