@@ -106,11 +106,11 @@ Bug Reports
 Test Summary Report
 
 7. Risks and Mitigation
-          Risk	                    Impact	                    Mitigation
-UI breaks on small screens	Poor mobile UX	          Responsive testing on multiple resolutions
+Risk	                              Impact	                        Mitigation
+UI breaks on small screens	          Poor mobile UX	            Responsive testing on multiple resolutions
 Touch interactions not working	Cart/checkout failure	  Manual validation of tap actions
-Demo environment instability	False failures	          Re-run failed test cases
-Layout changes without notice	Outdated test cases	  Regular test case review
+Demo environment instability	          False failures	            Re-run failed test cases
+Layout changes without notice	          Outdated test cases	            Regular test case review
 
 8. Assumptions and Dependencies
 
@@ -120,5 +120,5 @@ Layout changes without notice	Outdated test cases	  Regular test case review
 - Test data may change without notice
 
 9. Approval
-Role		    Name	    Date
+    Role		    Name	              Date
 QA Engineer	Peycho Peychev	  2026.01.15
