@@ -1,0 +1,209 @@
+Sauce Demo Shopify – Desktop & Mobile Web
+
+DESKTOP – POSITIVE TEST CASES
+
+TC-001 – Load Homepage (Desktop)
+Priority: P0
+Type: Smoke
+Preconditions: User has an active internet connection
+
+Steps:
+Open a web browser (Chrome)
+Navigate to https://sauce-demo.myshopify.com/
+
+Expected Result:
+Homepage loads successfully
+Product list is displayed
+
+
+TC-002 – Display Product Information (Desktop)
+Priority: P0
+Type: Smoke
+Preconditions: Homepage is loaded
+
+Steps:
+Review the product cards on the homepage
+
+Expected Result:
+Each product displays name, price, and image
+
+TC-003 – Add Product to Cart (Desktop)
+Priority: P0
+Type: Smoke
+Preconditions: Products are visible on the page
+
+Steps:
+
+Click “Add to cart” on any product
+
+Expected Result:
+Product is added to the cart
+Cart icon updates with item count
+
+TC-004 – Remove Product from Cart (Desktop)
+Priority: P1
+Type: Regression
+Preconditions: A product is already added to the cart
+
+Steps:
+Open the cart
+Click “Remove”
+
+Expected Result:
+Product is removed
+Cart becomes empty
+
+TC-005 – Checkout Button Availability (Desktop)
+Priority: P1
+Type: Regression
+Preconditions: Cart contains at least one product
+
+Steps:
+Open the cart
+
+Expected Result:
+“Checkout” button is visible and enabled
+
+MOBILE WEB – POSITIVE TEST CASES
+
+TC-006 – Load Website on Mobile Device
+Priority: P0
+Type: Smoke
+Preconditions: Mobile device with internet access
+
+Steps:
+Open a mobile browser
+Navigate to the website
+
+Expected Result:
+Website loads successfully
+Layout adapts to mobile screen size
+
+TC-007 – Add Product to Cart (Mobile)
+Priority: P0
+Type: Smoke
+Preconditions: Products are visible on mobile view
+
+Steps:
+Tap “Add to cart” on a product
+
+Expected Result:
+Product is added successfully
+Cart icon updates correctly
+
+TC-008 – Checkout Button on Mobile
+Priority: P1
+Type: Regression
+Preconditions: Cart contains a product
+
+Steps:
+Open the cart
+
+Expected Result:
+Checkout button is visible
+
+Button fits the screen and is tappable
+
+DESKTOP – NEGATIVE TEST CASES
+
+TC-009 – Open Cart with Empty Cart (Desktop)
+Priority: P1
+Type: Negative
+Preconditions: No products added to cart
+
+Steps:
+Open the cart
+
+Expected Result:
+Empty cart state is displayed
+No UI errors or crashes occur
+
+TC-010 – Attempt Checkout with Empty Cart (Desktop)
+Priority: P1
+Type: Negative
+Preconditions: Cart is empty
+
+Steps:
+Open the cart
+Click “Checkout” (if available)
+
+Expected Result:
+Checkout is blocked or a validation message is shown
+User cannot proceed without products
+
+TC-011 – Rapid Click on “Add to cart” (Desktop)
+Priority: P1
+Type: Negative / Edge
+Preconditions: Products are visible
+
+Steps:
+Click “Add to cart” multiple times quickly
+
+Expected Result:
+Only one item is added (or behavior is clearly defined)
+No UI glitches or incorrect cart count
+
+TC-012 – Refresh Page After Adding Product (Desktop)
+Priority: P2
+Type: Negative / Session
+Preconditions: Product is added to cart
+
+Steps:
+Add a product to the cart
+Refresh the page
+Open the cart
+
+Expected Result:
+Cart state is consistent (item persists or resets predictably)
+No broken UI or errors
+
+MOBILE WEB – NEGATIVE TEST CASES
+
+TC-013 – Checkout Button Visibility on Mobile
+Priority: P1
+Type: Negative / UI
+Preconditions: Product is added to cart
+
+Steps:
+Open the cart on mobile view
+
+Expected Result:
+Checkout button is fully visible
+Button is not covered by other UI elements
+
+TC-014 – Rapid Taps on “Add to cart” (Mobile)
+Priority: P1
+Type: Negative / Edge
+Preconditions: Products are visible on mobile view
+
+Steps:
+Tap “Add to cart” multiple times quickly
+
+Expected Result:
+Cart updates correctly
+No duplicated items or frozen UI
+
+TC-015 – Orientation Change During Interaction (Mobile)
+Priority: P2
+Type: Negative / Responsive
+Preconditions: Website is open on mobile device
+
+Steps:
+Start an action (open cart or scroll)
+Change device orientation (portrait → landscape)
+
+Expected Result:
+Layout adapts correctly
+No overlapping or hidden elements
+
+TC-016 – Empty Cart State on Mobile
+Priority: P2
+Type: Negative / UI
+Preconditions: No products added
+
+Steps:
+Open the cart on mobile device
+
+Expected Result:
+Empty cart message is clear and readable
+No layout issues on small screens
