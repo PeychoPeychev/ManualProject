@@ -1,0 +1,124 @@
+Sauce Demo Shopify – Manual QA (Web & Mobile)
+1. Overview
+
+Project Name: Sauce Demo Shopify – Manual QA Portfolio
+Application Under Test (AUT): https://sauce-demo.myshopify.com/
+
+Testing Type: Manual Functional and Responsive Testing
+Prepared by: Peycho Peychev
+Date: 2026-01-15
+
+Objective
+
+The objective of this testing effort is to validate that the core e-commerce functionality of the Sauce Demo Shopify website works correctly across desktop and mobile devices.
+The testing ensures that users can successfully:
+
+- browse products
+- add and remove products from the cart
+- proceed to checkout
+- interact with primary navigation and UI elements on both desktop and mobile environments.
+
+2. Scope
+2.1 In Scope
+Desktop Web:
+
+- Product catalog functionality
+- Cart operations (add/remove/update)
+- Checkout navigation
+- Main navigation and UI elements
+
+Mobile Web:
+
+- Responsive layout on mobile devices
+- Product catalog usability on small screens
+- Cart behavior on mobile
+- Mobile checkout navigation
+- Mobile menu (hamburger menu, if available)
+- Touch interactions (tap instead of click)
+
+2.2 Out of Scope
+
+- Native mobile applications (iOS / Android apps)
+- Mobile performance testing
+- Payment processing
+- Email notifications
+- Backend / API testing
+
+Security testing
+
+3. Test Approach
+3.1 Test Levels
+
+- Smoke Testing: Validation of critical user flows on desktop and mobile
+- Regression Testing: Detailed verification of functionality and UI behavior
+- Responsive Testing: Layout and usability validation across different screen sizes
+- Negative Testing: Validation of system behavior during invalid or unexpected user actions
+
+3.2 Test Types
+
+- Functional testing
+- UI and UX testing
+- Responsive testing
+- Exploratory testing (limited)
+
+4. Test Environment
+4.1 Desktop Environment
+Parameter	   Value
+OS	           Windows 10 / 11, macOS
+Browser	           Chrome (primary), Firefox
+Resolution	   1920x1080, 1366x768
+4.2 Mobile Environment (Web)
+Device Type	   Browser	        Resolution
+Android phone	   Chrome	        360x640
+iPhone	           Safari / Chrome	375x667
+Tablet (optional)  Chrome / Safari	768x1024
+
+Mobile testing will be executed using:
+
+- real devices (if available)
+- browser developer tools (responsive mode)
+
+5. Entry and Exit Criteria
+5.1 Entry Criteria
+
+Testing can begin when:
+
+- the website is accessible on desktop and mobile
+- main pages load correctly
+- no known blocking incidents exist
+
+5.2 Exit Criteria
+
+Testing is considered complete when:
+
+- all Smoke test cases pass on desktop and mobile
+- no open Blocker defects remain
+- test results are documented in the Test Summary Report
+
+6. Test Deliverables
+
+Test Plan
+
+Test Cases (Desktop & Mobile)
+
+Bug Reports
+
+Test Summary Report
+
+7. Risks and Mitigation
+          Risk	                    Impact	                    Mitigation
+UI breaks on small screens	Poor mobile UX	          Responsive testing on multiple resolutions
+Touch interactions not working	Cart/checkout failure	  Manual validation of tap actions
+Demo environment instability	False failures	          Re-run failed test cases
+Layout changes without notice	Outdated test cases	  Regular test case review
+
+8. Assumptions and Dependencies
+
+- The website is a demo Shopify store
+- Mobile testing is limited to mobile web (not native apps)
+- Some mobile behaviors depend on browser rendering
+- Test data may change without notice
+
+9. Approval
+Role		    Name	    Date
+QA Engineer	Peycho Peychev	  2026.01.15

@@ -1,0 +1,88 @@
+Test Summary Report
+
+Sauce Demo Shopify – Manual QA
+
+1. Overview
+
+Project: Sauce Demo Shopify – Manual QA Portfolio
+Application URL: https://sauce-demo.myshopify.com/
+
+Test Type: Manual Functional Testing (Desktop & Mobile Web)
+Test Cycle: Cycle 1
+Tester: Peycho Peychev
+Date: 2026-01-19
+
+Purpose
+
+The purpose of this test summary report is to provide an overview of the testing activities performed, the test results, identified defects, and the overall quality assessment of the application.
+
+2. Test Scope Summary
+
+Tested Areas: 
+
+- Product catalog (desktop and mobile)
+- Cart functionality (add/remove items)
+- Checkout button availability and behavior
+- Responsive behavior on mobile devices
+- Basic navigation and UI elements
+
+Not Tested / Out of Scope:
+
+- Payment processing
+- User authentication
+- Email notifications
+- Backend / API functionality
+- Performance and security testing
+
+3. Test Execution Summary
+
+Metric	Count
+Total Test Cases	16
+Executed	        16
+Passed			11
+Failed			5
+Blocked			0
+
+4. Defect Summary
+Severity	Count
+Critical	0
+Major		3
+Minor		2
+
+Key Defects Identified:
+
+- Cart icon not updating correctly after adding products
+- Checkout button partially hidden on mobile devices
+- Multiple items added due to rapid tap/click actions
+
+5. Test Environment
+
+Desktop
+
+- OS: Windows 11
+- Browser: Google Chrome
+
+Mobile
+
+- iOS (Safari)
+- Android (Chrome)
+- Mobile testing executed using real devices and browser responsive mode
+
+6. Risks and Observations
+
+- Mobile UI issues may negatively impact user experience and conversion rate
+- Cart-related inconsistencies could confuse users during shopping
+- Some behaviors differ between desktop and mobile views
+
+7. Recommendation
+
+❌ Release is NOT recommended at this stage.
+
+The application contains several Major defects related to cart behavior and mobile UI that should be addressed before a production release.
+A re-test is recommended after defect fixes.
+
+8. Conclusion
+
+Manual testing of the Sauce Demo Shopify website was successfully completed for the defined scope.
+While core functionality is present, several usability and functional issues were identified, particularly on mobile devices.
+Further testing cycles are recommended after defect resolution.

@@ -1,0 +1,100 @@
+📄 Bug Reports
+
+Sauce Demo Shopify – Manual QA
+
+BUG-001 – Cart icon does not update after adding product
+Severity: Major
+Priority: P1
+Environment: Windows 11, Chrome
+
+Preconditions: User is on homepage
+
+Steps to Reproduce:
+Open the website
+Click “Add to cart” on any product
+
+Expected Result:
+Cart icon updates with item count
+
+Actual Result:
+Cart icon does not reflect the added product
+
+Status: Open
+
+BUG-002 – Checkout button visible when cart is empty (Desktop)
+
+Severity: Minor
+Priority: P3
+Environment: Windows 11, Chrome
+
+Preconditions: Cart is empty
+
+Steps to Reproduce:
+Open the cart with no products added
+
+Expected Result:
+Checkout button is hidden or disabled
+
+Actual Result:
+Checkout button is visible and clickable
+
+Status: Open
+
+BUG-003 – Checkout button partially hidden on mobile screen
+
+Severity: Major
+Priority: P1
+Environment: iPhone 12, iOS Safari
+
+Preconditions: Product added to cart
+
+Steps to Reproduce:
+Open the cart on mobile device
+
+Expected Result:
+Checkout button is fully visible and tappable
+
+Actual Result:
+Checkout button is partially outside the screen
+
+Status: Open
+
+BUG-004 – Rapid tap on “Add to cart” adds multiple items (Mobile)
+
+Severity: Major
+Priority: P2
+Environment: Android, Chrome
+
+Preconditions: Products visible on mobile view
+
+Steps to Reproduce:
+Tap “Add to cart” multiple times quickly
+
+Expected Result:
+Only one item is added (or behavior is clearly defined)
+
+Actual Result:
+Multiple items are added to the cart
+
+Status: Open
+
+BUG-005 – Cart state resets after page refresh
+
+Severity: Minor
+Priority: P3
+Environment: Windows 11, Chrome
+
+Preconditions: Product added to cart
+
+Steps to Reproduce:
+Add a product to cart
+Refresh the page
+Open the cart
+
+Expected Result:
+Cart state persists or behavior is consistent
+
+Actual Result:
+Cart is reset unexpectedly
+
+Status: Open
